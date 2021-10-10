@@ -13,7 +13,7 @@ class CustomMessage {
 }
 
 class Login {
-  String verification = "A54U8sd-*237aHTR";
+  String verification = "//";
   late String name;
   late String surname;
   late bool answer;
@@ -23,7 +23,7 @@ class Login {
   Future<CustomMessage> userLogin(String userPass) async {
     print(formattedDate);
     //Bu url değişecek
-    var url = Uri.parse("https://security.kozmossinavmerkezi.com/take_data.php");
+    var url = Uri.parse("//");
     var data = {
       "verification": verification,
       "password": userPass,
@@ -55,7 +55,7 @@ class Login {
 
   Future<CustomMessage> userVerificationLogin(String userPass) async {
     //Bu url değişecek
-    var url = Uri.parse("https://security.kozmossinavmerkezi.com/take_data.php");
+    var url = Uri.parse("//");
     var data = {
       "verification": verification,
       "password": userPass,
